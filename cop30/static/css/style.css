@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar-custom {
+    background-color: #088008;
+    color: #fff;
+    padding: 10px;
+}
+
+
+.nav-header {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-authenticate {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-header li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    position: relative;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s ease-out;
+}
+
+.nav-header li a:hover {
+    border-bottom: 3px solid #28a745;
+}
+
+.nav-authenticate li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.em;
+}
+
+.carousel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: rgba(211, 47, 47, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+#loading-spinner {
+    border: 16px solid #3498db;
+    border-top: 16px blue;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container-xl,
+.container-xxl {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 5%;
+    right: 70%;
+    height: 70%;
+    width: 30%;
+    z-index: 10;
+}
+
+.introSection__right {
+    flex: 1;
+    padding: 10px;
+}
+
+.introSectionSlide {
+    flex: 2;
+    position: relative;
+}
+
+.introSectionImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.col-12 {
+    flex: 1;
+    padding-top: 50px;
+    color: white;
+}
+
+.introSection__h2 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.introSection__h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.introSection__text {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
